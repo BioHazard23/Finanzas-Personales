@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Finanzas Personales</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">Finanzas Personales</div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../02-SERVICIOS/servicios.html">Servicios</a></li>
+                    <li><a href="../03-NOSOTROS/nosotros.html">Nosotros</a></li>
+                    <li><a href="../05-CONTACTO/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div class="container">
+        <div class="calculadora">
+            <h1>Calculadora de Finanzas Personales</h1>
+
+            <label for="ingresos">Ingresos Mensuales:</label>
+            <input type="number" id="ingresos" placeholder="Ejemplo: 3000">
+
+            <h2>Gastos</h2>
+            <label>Arriendo:</label> <input type="number" id="arriendo">
+            <label>Servicios:</label> <input type="number" id="servicios">
+            <label>Transporte:</label> <input type="number" id="transporte">
+            <label>Alimentación:</label> <input type="number" id="alimentacion">
+            <label>Otros Gastos:</label> <input type="number" id="otros">
+
+            <button onclick="calcularFinanzas()">Calcular</button>
+
+            <h2>Resultados</h2>
+            <p id="resultado"></p>
+
+            <canvas id="graficoGastos"></canvas>
+            <canvas id="graficoRegla"></canvas>
+        </div>
+
+        <div class="instructivo">
+            <h2>¿Cómo usar la calculadora?</h2>
+            <p>1. Ingresa tus ingresos mensuales.</p>
+            <p>2. Llena los campos con tus gastos mensuales.</p>
+            <p>3. Presiona "Calcular" y observa los resultados.</p>
+            <p>4. La gráfica de barras muestra la distribución de tus gastos.</p>
+            <p>5. La gráfica de torta te muestra cómo distribuir tu dinero según la regla 50/30/20.</p>
+        </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+    <footer>
+        <p>&copy; 2025 Finanzas Personales. Todos Los Derechos Reservados</p>
+    </footer>
+</body>
+</html>

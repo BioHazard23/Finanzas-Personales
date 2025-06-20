@@ -1,0 +1,131 @@
+/* /estilos/*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    
+}
+
+/* /Encabezado/ */
+
+header {
+    background-color: #001f3f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 10%;
+    width: 100%;
+    position: fixed;  /* Lo fija en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000;  /* Asegura que esté por encima de otros elementos */
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Para evitar que el contenido se solape con el header */
+body {
+    padding-top: 70px;  /* Ajusta según la altura del header */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.calculadora, .instructivo {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.calculadora {
+    max-width: 400px;
+    margin-top: 40px;
+}
+
+.instructivo {
+    max-width: 300px;
+    text-align: left;
+}
+
+.instructivo p {
+    margin: 8px;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1e3799;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3c6382;
+}
+
+
+/*FOOTER*/
+footer {
+    background-color: #001f3f;
+   color: white;
+   text-align: center;
+   padding: 100px 0;
+   margin-top: 20px;
+   width: 100%;
+   }

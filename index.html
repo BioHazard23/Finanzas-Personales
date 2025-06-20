@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Finanzas</title>
+    <link rel="stylesheet" href="01-INICIO/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">Finanzas Personales
+            </div>
+            
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="../02-SERVICIOS/servicios.html">Servicios</a></li>
+                    <li><a href="../03-NOSOTROS/nosotros.html">Nosotros</a></li>
+                    <li><a href="../05-CONTACTO/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="cta-button" id="openChat" type="button">Solicitar Asesoría</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>La herramienta que transformará tus finanzas</h1>
+            <p>Sé capaz de organizar TÚ dinero y finanzas personales.</p>
+            <button class="cta-button1">
+                <a href="../04-CALCULADORA/calculadora.html">¡Accede a la calculadora ahora mismo!</a>
+            </button>
+        </div>
+        <div class="hero-image">
+            <img src="01-INICIO/freepik__background__97884.png" alt="Dashboard financiero">
+        </div>
+    </section>
+
+    <section class="benefit">
+        <img src="https://cdn.prod.website-files.com/638654b586d87b27f565a4d6/678690ad8a2da89a854c1ce2_icon_planner_task.svg" alt="Icono hoja y lápiz">
+        <h2>Beneficios De Asesorarte Con Nosotros</h2>
+        <strong><p>Toma el control de tus finanzas de forma sencilla y efectiva.</p></strong>
+
+        <div class="benefit-cards">
+            <div class="card">
+                <h3>Presupuesto</h3>
+                <p>Construye y sigue tu presupuesto mensual.</p>
+            </div>
+            <div class="card">
+                <h3>Ahorro</h3>
+                <p>Define tu meta de ahorro y ponla en acción.</p>
+            </div>
+            <div class="card">
+                <h3>Patrimonio</h3>
+                <p>Calcula y asegúrate de que crezca continuamente.</p>
+            </div>
+            <div class="card">
+                <h3>Deudas</h3>
+                <p>Monitorea y elimínalas de una vez por todas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="contenedor">
+            <img src="freepik__background__97884.png" alt="Computador mostrando el planificador financiero">
+            <div class="texto">
+                <h1>¡La única Calculadora financiera que necesitarás en tu vida!</h1>
+                <p>Diseñado para adaptarse a tus finanzas actuales y llevarlas a otro nivel.<br>
+                    <b>¡Haz más por tu dinero y accede hoy!</b>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="contenedor2">
+            <img src="imagen1.webp" alt="">
+            <h1>¿Cual es la funciona de nuestra calculadora?</h1>
+            <b>Aqui te lo explicamos.</b>
+            <p>La calculadora ideal para llevar tus Finanzas Personales.</p>
+        </div>
+    </section>
+    
+
+    <section>
+    <div class="video"> <iframe width="560" height="315" src="https://www.youtube.com/embed/oaeAEvfQ9o8?si=ntPy9nCQNjMOYRQd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
+    </section>
+
+
+    <!-- CHATBOT -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header" id="chat-headers">
+            <span>Asesor Virtual</span>
+            <button id="closeChat">✖</button>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="main-question" id="main-question">
+                <p>Hola 👋, ¿cómo puedo ayudarte?</p>
+                                <br>
+                <div class="chat-options">
+                    <button class="chat-option" onclick="sendQuestion('¿Cómo funciona la calculadora?')">
+                        ¿Cómo funciona la calculadora?
+                    </button>
+                    <button class="chat-option" onclick="sendQuestion('¿Cuáles son los beneficios de asesorarse con ustedes?')">
+                        ¿Cuáles son los beneficios de asesorarse con ustedes?
+                    </button>
+                    <button class="chat-option" onclick="sendQuestion('¿Cómo puedo contactarlos?')">
+                        ¿Cómo puedo contactarlos?
+                    </button>
+                </div>
+            </div>
+            <div id="main-answare"></div>
+        </div>
+    </div>
+                                </br>
+
+    <footer>
+        <p>&copy; 2025 Finanzas Personales. Todos Los Derechos Reservados</p>
+    </footer>
+
+    <script src="01-INICIO/java.js"></script>
+</body>
+</html>
